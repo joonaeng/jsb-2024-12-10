@@ -8,12 +8,13 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class MainController {
     @GetMapping("/")
     @ResponseBody
-    public String home() {
-        return "ㄱㅁㄹ";
+    public int home() {
+        return 22;
     }
 
     @GetMapping("/about")
+    @ResponseBody
     public void about() {
-        System.out.println("about");
+        System.out.println("about hello");
     }
 }
